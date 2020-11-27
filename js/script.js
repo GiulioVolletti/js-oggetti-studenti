@@ -39,12 +39,12 @@ for (var i = 0; i < arrayStudenti.length; i++) {
   document.getElementById('lista-studenti').innerHTML += "Studente: " + arrayStudenti[i].nome + " " + arrayStudenti[i].cognome + "<br>";
 }
 // Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
-var arrayNuovoStudente = {}
-arrayNuovoStudente.nome = prompt("nome nuovo studente:");
-arrayNuovoStudente.cognome = prompt("cognome dello studente:");
-arrayNuovoStudente.eta = parseInt(prompt("eta dello studente:"));
-arrayStudenti.push(arrayNuovoStudente)
-// console.log(arrayNuovoStudente);
+var inserimentoNuovoStudente = {}
+inserimentoNuovoStudente.nome = prompt("nome nuovo studente:");
+inserimentoNuovoStudente.cognome = prompt("cognome dello studente:");
+inserimentoNuovoStudente.eta = parseInt(prompt("eta dello studente:"));
+arrayStudenti.push(inserimentoNuovoStudente)
+// console.log(inserimentoNuovoStudente);
 console.log(arrayStudenti);
 
 for (var i = 0; i < arrayStudenti.length; i++) {
